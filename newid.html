@@ -4,7 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>회원가입</title>
-    <script src="./js/new.js"></script>
+    <script>
+      // 이메일 검증 함수
+      function validateEmail() {
+        let email = document.getElementById("email").value;
+        let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        if (emailPattern.test(email)) {
+          alert("유효한 이메일입니다.");
+        } else {
+          alert("올바른 이메일 형식을 입력하세요.");
+        }
+      }
+
+      // 주민등록번호 검증 함수
+      function validateJumin() {
+        let ssn = document.getElementById("jumin").value.replace(/[^0-9]/g, ""); // 숫자만 추출
+
+        if (ssn.length !== 13) {
+          alert("주민등록번호는 13자리여야 합니다.");
+          return;
+        }
+
+        let weights = [2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5];
+        let sum = 0;
+
+        for (let i = 0; i < 12; i++) {
+          sum += parseInt(ssn[i]) * weights[i];
+        }
+
+        let remainder = sum % 11;
+        let checkDigit = (11 - remainder) % 10; // 검증번호 계산
+
+        if (checkDigit === parseInt(ssn[12])) {
+          alert("유효한 주민등록번호입니다.");
+        } else {
+          alert("유효하지 않은 주민등록번호입니다.");
+        }
+      }
+    </script>
     <link rel="stylesheet" href="./css/newid.css" />
   </head>
   <body>
@@ -16,7 +54,7 @@
         method="post"
       >
         <div class="form-group">
-          <label for="userid" aria-rowspan="5">아이디</label>
+          <label for="userid">아이디</label>
           <input
             type="text"
             maxlength="20"
@@ -34,7 +72,6 @@
             id="email"
             placeholder="이메일 입력"
           />
-          <!-- 이메일 검증 버튼 -->
           <button type="button" onclick="validateEmail()">이메일 검증</button>
         </div>
         <div class="form-group">
@@ -69,7 +106,6 @@
         </div>
         <div class="form-group">
           <label for="jumin">주민 번호</label>
-          <!-- 주민번호 입력 필드 id를 "jumin"으로 수정 -->
           <input
             type="text"
             id="jumin"
@@ -77,7 +113,6 @@
             maxlength="20"
             placeholder="예: 123456-1234567"
           />
-          <!-- 주민번호 검증 버튼 -->
           <button type="button" onclick="validateJumin()">주민번호 검증</button>
         </div>
         <div class="form-group">
