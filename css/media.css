@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Ownglyph_ParkDaHyun";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: Ownglyph_ParkDaHyun;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+}
+
+header > h1 {
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+}
+
+#menus {
+  width: 100%;
+}
+
+#menus > div {
+  height: 300px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#menus h2 {
+  position: absolute;
+  right: 3%;
+  bottom: 10px;
+  color: white;
+  text-shadow: 3px 3px 5px white;
+}
+
+#menu1,
+#menu2,
+#menu3,
+#menu4,
+#menu5 {
+  width: 100%;
+}
+#menu1 {
+  background: url(.images/travel1.jpg) no-repeat center/cover;
+}
+#menu2 {
+  background: url(.images/travel2.jpg) no-repeat center/cover;
+}
+
+#menu3 {
+  background: url(.images/travel3.jpg) no-repeat center/cover;
+}
+
+#menu4 {
+  background: url(.images/travel4.jpg) no-repeat center/cover;
+}
+
+#menu5 {
+  background: url(.images/travel5.jpg) no-repeat center/cover;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  height: 100px;
+}
+
+footer > p {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+}
+
+/* 테블릿 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #menus {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  #menu1,
+  #menu2,
+  #menu3,
+  #menu4 {
+    width: 49%;
+  }
+}
+
+/* 데스크탑 */
+@media (min-width: 1024px) {
+  #menus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #menu1,
+  #menu2,
+  #menu3,
+  #menu4 {
+    width: 32%;
+  }
+
+  #menu5 {
+    width: 66%;
+  }
+}

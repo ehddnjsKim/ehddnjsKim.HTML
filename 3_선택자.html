@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>선택자</title>
+    <style>
+      /* 태그 선택자 */
+      h1 {
+        color: burlywood;
+        text-align: center;
+      }
+      /* 클래스 선택자*/
+      .intro {
+        font-weight: bold;
+        color: rgb(153, 0, 255);
+      }
+      /* 아이디 선택자 */
+      #student-list {
+        background-color: #f9f9f9f9;
+        padding: 30px;
+      }
+
+      /* 그룹 선택자 */
+      p,
+      li {
+        font-size: 12px;
+      }
+
+      /* 클래스 선택자 */
+      .highlight {
+        color: gold;
+      }
+
+      /* 의사 클래스 선택자 */
+      a:link {
+        color: deepskyblue;
+        text-decoration: none;
+      }
+      a:visited {
+        color: deeppink;
+        text-decoration: none;
+      }
+      a:hover {
+        color: yellowgreen;
+        text-decoration: underline;
+      }
+      a:active {
+        color: darkgreen;
+        text-decoration: underline;
+      }
+
+      /* 속성 선택자 */
+      a[href="#"] {
+        font-weight: bold;
+        color: red;
+      }
+      a[href^="https"] {
+        font-weight: bold;
+        color: teal;
+      }
+
+      /* 자식 선택자*/
+      ul#student-list > li {
+        list-style-type: square;
+      }
+
+      /* 자손 선택자*/
+      ul#student-list p {
+        color: rgb(187, 216, 25);
+        font-style: italic;
+      }
+
+      /* 형제 선택자*/
+      /* 인접 형제 선택자 */
+      p.intro + p {
+        background-color: cornflowerblue;
+      }
+      /* 형제 선택자 */
+      p.intro ~ p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>선택자</h1>
+    <p class="intro">이 문단은 첫번쨰 문단 입니다.</p>
+    <p>이 문단은 두번쨰 문답입니다.</p>
+    <span class="intro">이 문장은 첫번쨰 문장입니다.</span>
+
+    <ul id="student-list">
+      <li>김사과</li>
+      <li>반하나</li>
+      <li>오렌지</li>
+      <p class="highlight">출석부</p>
+    </ul>
+
+    <hr />
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum
+      tempora vitae maiores eveniet tempore explicabo aliquam recusandae
+      excepturi ea repellendus, sunt illum et error nihil quod. Autem, veniam
+      qui.
+    </p>
+
+    <a href="https://www.naver.com">외부 링크</a>
+    <a href="#">내부 링크</a> <a href="#student-list">내부 링크2</a>
+  </body>
+</html>

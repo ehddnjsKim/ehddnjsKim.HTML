@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid 레이아웃</title>
+    <style>
+      /*
+            fr: 사용 가능한 공간을 나누어 비율로 할당
+            예) 1fr 1fr -> 상요 가능한 너비를 2등분하여 동일한 크기 1:1 비율을 가지게 함
+
+            grid-template-columns: 1fr 2fr;
+            전체 공간을 3등분한 후 첫 번째 열은 1/3. 두 번째 열은 2/3
+
+        */
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        gap: 10px;
+      }
+      .grid-item {
+        background-color: rgb(96, 212, 148);
+        color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* 1rem = 16px*/
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">1번</div>
+      <div class="grid-item">2번</div>
+      <div class="grid-item">3번</div>
+      <div class="grid-item">4번</div>
+    </div>
+  </body>
+</html>

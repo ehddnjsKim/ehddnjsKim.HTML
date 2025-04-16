@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배경</title>
+    <style>
+      html {
+        background: url(./bird2.jpg) no-repeat fixed center;
+        /* = background: url(./bird2.jpg) no-repeat center;/center */
+        background-size: cover;
+      }
+
+      div {
+        /*background-color: gold;*/
+        background-image: url(./bird.png);
+        width: 50%;
+        height: 300px;
+        padding: 20px;
+        border: 3px dotted red;
+        margin-bottom: 20px;
+        background-repeat: no-repeat; /*repeat-x, repeat-y*/
+      }
+
+      #bg1 {
+        background-position: center;
+      }
+
+      #bg2 {
+        background-position: right bottom;
+      }
+
+      #bg3 {
+        background-position: 30% 100px;
+      }
+
+      #bg4 {
+        width: 300px;
+        height: 200px;
+        background-color: deepskyblue;
+        background-size: contain; /* 배경보다 배경이지가 작다면 가로/세로 같은 비율로 증가시켜 맞춰줌 */
+      }
+
+      #bg5 {
+        width: 100px;
+        height: 80px;
+        background-size: cover; /* 배경보다 배경이지가 크다면 가로/세로 같은 비율로 줄여서 맞춰줌 */
+        background-position: bottom center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bg1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos ipsa
+      accusantium. Doloremque laudantium eum veniam natus, commodi repudiandae
+      eius maxime impedit, labore ducimus architecto soluta molestias eaque
+      illum tempore.
+    </div>
+    <div id="bg2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe architecto
+      cum dolorem distinctio accusamus magnam sequi dolor repudiandae, velit
+      nihil facere eligendi ullam, nemo excepturi numquam possimus consequuntur
+      quaerat delectus?
+    </div>
+    <div id="bg3">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad corrupti
+      tenetur repellendus aliquam iure expedita architecto. Consectetur nulla
+      incidunt minus nesciunt magni, tempora nemo eveniet nam commodi et impedit
+      illo?
+    </div>
+    <div id="bg4"></div>
+    <div id="bg5"></div>
+  </body>
+</html>

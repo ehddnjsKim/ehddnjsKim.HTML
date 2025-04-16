@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Ownglyph_ParkDaHyun";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  background: url(./soop.jpg) no-repeat fixed center;
+  background-size: cover;
+}
+
+* {
+  font-family: Ownglyph_ParkDaHyun;
+  margin: 0;
+  padding: 0;
+}
+.title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 600px;
+  background-color: ivory;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.form-group button {
+  display: block;
+  margin: 0 auto 16px;
+  padding: 0;
+  max-width: 400px;
+  font-size: 18px;
+  border-radius: 6px;
+  background-color: tan;
+  border: none;
+  cursor: pointer;
+}
+
+.help-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+.inline-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.gender-group {
+  flex-direction: column;
+  align-items: center;
+}
+div {
+  background-color: ivory;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.blog-link {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #ddda0c;
+}
+
+.blog-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.blog-link a:hover {
+  text-decoration: underline;
+}

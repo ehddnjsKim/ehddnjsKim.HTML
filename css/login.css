@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "Ownglyph_ParkDaHyun";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: Ownglyph_ParkDaHyun;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: url(./soop.jpg) no-repeat fixed center;
+  background-size: cover;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: url("./soop.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 400px;
+  padding: 30px;
+  background-color: ivory;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.login-form label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  padding: 10px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.options {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.login-btn {
+  padding: 10px;
+  font-size: 18px;
+  background-color: tan;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.forgot-link {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+* {
+  font-family: Ownglyph_ParkDaHyun;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url("./soop.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  background-color: ivory;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-container {
+  width: 400px;
+  padding: 30px;
+  background-color: ivory;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 40px;
+}
+.login-form label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  padding: 10px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.options {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.login-btn {
+  padding: 10px;
+  font-size: 18px;
+  background-color: tan;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.forgot-link {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.new-id {
+  position: absolute;
+  right: 20px;
+  bottom: -10px;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.blog-link {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #ddda0c;
+}
+
+.blog-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.blog-link a:hover {
+  text-decoration: underline;
+}

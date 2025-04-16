@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <main class="login-container">
+      <h2 class="login-title">로그인</h2>
+      <form action="/login" method="post" class="login-form">
+        <label for="email">이메일</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="이메일 입력"
+        />
+
+        <label for="password">비밀번호</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          placeholder="비밀번호 입력"
+        />
+
+        <div class="options">
+          <label><input type="checkbox" /> 아이디 기억하기</label>
+        </div>
+
+        <button type="submit" class="login-btn">로그인</button>
+
+        <a href="#" class="forgot-link">비밀번호를 잊으셨나요?</a>
+        <a href="#" class="new-id">회원가입</a>
+      </form>
+    </main>
+    <div class="blog-link">
+      👉 <a href="pko10042001.dothome.co.kr">내 블로그 바로가기</a>
+    </div>
+  </body>
+</html>
